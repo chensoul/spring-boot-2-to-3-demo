@@ -1,0 +1,6 @@
+-- Flyway migration (Boot 2) → Flyway 10 (Boot 3)
+CREATE TABLE IF NOT EXISTS item (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
